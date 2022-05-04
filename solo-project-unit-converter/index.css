@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+.converter-title {   
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    padding-top: 53px;
+}
+
+.unit-value {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 97.5723px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 64px;
+}
+
+.converter-box {
+    margin-top: 50px;
+}
+
+.top-box {
+    width: 550px;
+    height: 260px;
+    background-image: linear-gradient(
+  45deg,
+  hsl(164deg 92% 25%) 0%,
+  hsl(164deg 92% 25%) 5%,
+  hsl(164deg 93% 26%) 10%,
+  hsl(164deg 93% 26%) 14%,
+  hsl(164deg 93% 27%) 19%,
+  hsl(163deg 93% 27%) 24%,
+  hsl(163deg 93% 28%) 29%,
+  hsl(163deg 93% 29%) 33%,
+  hsl(163deg 93% 29%) 38%,
+  hsl(163deg 93% 30%) 43%,
+  hsl(163deg 93% 30%) 48%,
+  hsl(163deg 92% 31%) 52%,
+  hsl(162deg 92% 32%) 57%,
+  hsl(162deg 91% 32%) 62%,
+  hsl(162deg 90% 33%) 67%,
+  hsl(162deg 90% 34%) 71%,
+  hsl(162deg 89% 35%) 76%,
+  hsl(161deg 88% 36%) 81%,
+  hsl(161deg 87% 36%) 86%,
+  hsl(161deg 86% 37%) 90%,
+  hsl(161deg 85% 38%) 95%,
+  hsl(160deg 84% 39%) 100%
+);
+}
+
+.bottom-box {
+    width: 550px;
+    height: 260px;
+    background-color: #1F2937;
+}
+
+.unit-title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 31px;
+}
+
+.unit-results {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #D2D2D2;
+    padding-top: 5px;
+}
