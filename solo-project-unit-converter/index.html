@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <div class="converter-box">
+        <div class="top-box">
+            <p class="converter-title">Metric/Imperial unit conversion</p>
+            <div class="unit-value">
+                <input type="number" id="numberValue" name="numberValue" min="0"><br>
+                <button onclick="calculateNewValue()">Convert</button>
+            </div>
+        </div>
+        <div class="bottom-box">
+            <p class="unit-title">Length (Meter/Feet)</p>
+            <p class="unit-results"><span id="m-el">0</span> meters = <span id="mtof-el">0.000</span> feet | <span id="f-el"></span>0</span> feet = <span id="ftom-el">0.000</span> meters</p>
+            <p class="unit-title">Volume (Liters/Gallons)</p>
+            <p class="unit-results"><span id="l-el">0</span> liters = <span id="ltog-el">0.000</span> gallons | <span id="g-el">0</span> gallons = <span id="gtol-el">0.000</span> liters</p>
+            <p class="unit-title">Mass (Kilograms/Pounds)</p>
+            <p class="unit-results"><span id="k-el">0</span> kilos = <span id="ktop-el">0.000</span> pounds | <span id="p-el">0</span> pounds = <span id="ptok-el">0.000</span> kilos</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
