@@ -14,5 +14,3 @@ function calculateNewValue() {
     multiply("ltog-el", 0.2641722, "l-el")
     multiply("ktop-el", 2.20462, "k-el")
 }
-
-
