@@ -24,7 +24,7 @@
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 64px;
+    padding-top: 10px;
 }
 
 .converter-box {
@@ -88,3 +88,38 @@
     color: #D2D2D2;
     padding-top: 5px;
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input {
+    width: 25%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #1F2937;
+    text-align: center;
+}
+
+button {
+    background-color: #1F2937;
+    width: 26.3%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #083327;
+    cursor: pointer;
+}
+
+
