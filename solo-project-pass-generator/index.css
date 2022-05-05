@@ -81,7 +81,6 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     margin: 35px 40px 0 40px;
-
 }
 
 .rectangles {
@@ -95,7 +94,7 @@ button:hover {
 .rectangles img {
     display: flex;
     justify-content: center;
-    margin-top: 17px;
+    margin-top: 15px;
 }
 
 #pass-el, #s-pass-el, #t-pass-el, #f-pass-el {
