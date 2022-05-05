@@ -10,7 +10,7 @@ body {
 
 .main-block {
     width: 550px;
-    height: 550px;
+    height: 610px;
     background-color: #1F2937;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -24,7 +24,7 @@ body {
     letter-spacing: -0.025em;
     color: #FFFFFF;
     margin-left: 52px;
-    padding-top: 118px;
+    padding-top: 80px;
 }
 
 .block-title {
@@ -97,4 +97,42 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 17px;
+}
+
+#pass-el, #s-pass-el, #t-pass-el, #f-pass-el {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #55F991;
+    margin-top: 3px;
+}
+
+.selectSection button {
+    margin-top: 10px;
+    width: 50px;
+    font-size: 18px;
+	background-color: #273549;   
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	border: 0;
+    padding: 3px;
+}
+
+.selectSection button:hover {
+	cursor: pointer;
+}
+
+.pass-length {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+
+.active {
+	background-color: #374151 !important;
 }
