@@ -13,15 +13,24 @@
         <p>Generate a</p>
         <p class="block-title">random password</p>
         <p class="sub-block-title">Never use an insecure password again.</p>
-        <button><span class="button-title"><img src="images/Icon.png">Generate passwords</span></button>
+            <div class="row-block">
+                <button onclick="newPass()"><span class="button-title"><img src="images/Icon.png">Generate passwords</span></button>
+                <div class="selectSection">
+                    <button type="button" class="active" id="eight-el">8</button>
+                    <button type="button" id="ten-el">10</button>
+                    <button type="button" id="twelve-el">12</button>
+                    <p class="pass-length">Change password length.</p>
+                </div>
+            </div>
         </div>
         <hr>
         <div class="rectangle">
-            <div class="rectangles"><img src="images/dots.png"></div>
-            <div class="rectangles"><img src="images/dots.png"></div>
-            <div class="rectangles"><img src="images/dots.png"></div>
-            <div class="rectangles"><img src="images/dots.png"></div>
+            <div class="rectangles"><span id="pass-el"><img src="images/dots.png"></span></div>
+            <div class="rectangles"><span id="s-pass-el"><img src="images/dots.png"></span></div>
+            <div class="rectangles"><span id="t-pass-el"><img src="images/dots.png"></span></div>
+            <div class="rectangles"><span id="f-pass-el"><img src="images/dots.png"></span></div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
