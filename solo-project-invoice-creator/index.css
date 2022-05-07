@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0 auto;  
+}
+
+body {
+    background-color: #1c1c1c;
+}
+
+.invoice-block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.invoice-top {
+    background-color: #F5F5F5;
+    height: 190px;
+    width: 550px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #2B283A;
+}
+
+.invoice-top h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    padding-bottom: 9px;
+    padding-top: 59px;
+}
+
+.invoice-bottom {
+    background-color: #fff;
+    height: 529px;
+    width: 550px;
+}
+
+.service-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 37px;
+    margin: 0 30px;
+}
+
+.price-and-service {
+    width: 143.17px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #D5D4D8;
+    border-radius: 7px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4A4E74;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.price-and-service:hover {
+    border: 1px solid #4A4E74;
+    cursor: pointer;
+}
+
+div.text { 
+    zoom: 1; 
+    overflow: hidden;
+    padding-top: 35px;
+    margin: 0 39px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #918E9B;
+}
+div.text div.left { 
+    float: left;
+}
+div.text div.right { 
+    float: right;
+}
+
+hr {
+    margin-top: 30px;
+    width: 471px;
+    height: 0px;
+    border: 1px solid #C3C6DB;
+}
+
+div.second-text { 
+    zoom: 1; 
+    overflow: hidden;
+    padding-top: 15px;
+    margin: 0 39px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #918E9B;
+}
+div.second-text div.left { 
+    float: left;
+}
+div.second-text div.right { 
+    float: right;
+}
+
+div.third-text { 
+    zoom: 1; 
+    overflow: hidden;
+    padding-top: 15px;
+    margin: 0 39px;
+}
+div.third-text div.left { 
+    float: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4A4E74;
+}
+div.third-text div.right { 
+    float: right;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+    color: #4A4E74;
+}
+
+div.services-text { 
+    padding-top: 25px;
+    zoom: 1; 
+    overflow: hidden;
+    margin: 0 39px;
+}
+div.services-text div.left { 
+    float: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #4A4E74;
+}
+div.services-text div.right { 
+    margin-bottom: 10px;
+    float: right;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+    color: #918E9B;
+}
+div.services-text div.right span { 
+    color: #4A4E74;
+}
+
+.sum-color {
+    color: #4A4E74;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    width: 473px;
+    height: 44px;
+    border: none;
+    background: #3770ED;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background: #2461e6;
+    cursor: pointer;
+}
