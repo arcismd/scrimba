@@ -6,6 +6,15 @@ let serviceTextEl = document.getElementById("serviceText-el")
 let sumEl = document.getElementById("sum-el")
 let sum = 0
 
+addService(washCarEl, 'Wash Cars', 10)
+addService(mowLawNeL, 'Mow Lawn', 20)
+addService(pullWeeds, 'Pull Weeds', 30)
+
+sendEl.addEventListener('click', function() {
+    sumEl.innerHTML = ""
+    serviceTextEl.innerHTML = ""
+})
+
 function addService(id, service, price) {
     id.addEventListener('click', function() {
         sum += price
