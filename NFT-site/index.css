@@ -40,19 +40,6 @@ a:active{
 
 /* layout */
 
-
-/* 
-Challenge:
-1. Give the images in section two a class.
-2. Use that class to set the width and 
-   border-radius for the images.
-3. Wrap the two images in a container div 
-   and give it a class.
-4. Create the CSS selector for that class 
-   and use flex-box to layout the images
-   as shown in the slide.
-*/
-
 header{
     background-color: #5f29a3;
     padding: 45px 0;
@@ -85,3 +72,10 @@ section{
     display: flex;
     justify-content: space-between;
 }
+
+footer {
+    text-align: center;
+    padding: 45px;
+    color: #5f29a3;
+}
+
