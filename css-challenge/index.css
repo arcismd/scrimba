@@ -37,6 +37,11 @@ h1 {
 h2 {
     font-size: 42px;
     margin-top: 0;
+    border-top: solid 1px #c4c4c4;
+    border-bottom: solid 1px #c4c4c4;
+    
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 h3 {
