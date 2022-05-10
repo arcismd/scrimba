@@ -11,19 +11,6 @@ body {
     margin: 0 auto;
 }
 
-.bold-text {
-    font-weight: 900;
-    display: block;
-}
-
-h1 .bold-text {
-    font-size: 80px;
-}
-
-h2 .bold-text {
-    font-size: 60px;
-}
-
 h1,
 h2 {
     font-weight: 300; 
@@ -48,6 +35,25 @@ h3 {
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 0;
+}
+
+.accent-text {
+    display: block;
+}
+
+h1 .accent-text {
+    font-size: 80px;
+}
+
+h2 .accent-text {
+    font-size: 60px;
+}
+
+.accent-text,
+.name,
+time {
+    font-weight: 900;
+    color: #99D930;
 }
 
 p {
@@ -77,6 +83,12 @@ section {
 .inverse {
     color: #fff;
     background: #252525;
+}
+
+.inverse .btn:hover,
+.inverse .btn:focus {
+    background: #fff;
+    color: #252525;
 }
 
 .btn {
