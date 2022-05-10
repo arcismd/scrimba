@@ -10,6 +10,19 @@ body {
     margin: 0 auto;
 }
 
+.bold-text {
+    font-weight: 900;
+    display: block;
+}
+
+h1 .bold-text {
+    font-size: 80px;
+}
+
+h2 .bold-text {
+    font-size: 60px;
+}
+
 h1,
 h2 {
     font-weight: 300;
@@ -26,6 +39,16 @@ h2 {
 h3 {
     font-size: 36px;
     font-weight: 900;
+}
+
+a {
+    color: #99D930;
+    font-weight: 900;
+}
+
+a:hover,
+a:focus {
+    color: #131313;
 }
 
 .small-text {
