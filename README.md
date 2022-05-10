@@ -2,6 +2,11 @@
 
 My projects based on the The Frontend Developer Career Path [curriculum](https://scrimba.com/learn/frontend).
 
+## Module 4
+
+- CSS Challenge - __[View on GitHub](https://arcismd.github.io/scrimba/css-challenge/) / [View on CodePen](https://codepen.io/arcismd/pen/poayqRG)__. _[[path](https://github.com/arcismd/scrimba/tree/main/css-challenge)]_
+- NFT Site - __[View on GitHub](https://arcismd.github.io/scrimba/NFT-site/) / [View on CodePen](https://codepen.io/arcismd/pen/dydMwWN)__. _[[path](https://github.com/arcismd/scrimba/tree/main/NFT-site)]_
+
 ## Module 3
 
 - Unit Converter - __[View on GitHub](https://arcismd.github.io/scrimba/solo-project-unit-converter/) / [View on CodePen](https://codepen.io/arcismd/pen/eYVNGaX)__. _[[path](https://github.com/arcismd/scrimba/tree/main/solo-project-unit-converter)]_
