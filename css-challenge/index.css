@@ -26,20 +26,27 @@ h2 .bold-text {
 
 h1,
 h2 {
-    font-weight: 300;
+    font-weight: 300; 
 }
 
 h1 {
     font-size: 60px;
+    margin-top: 0;
 }
 
 h2 {
     font-size: 42px;
+    margin-top: 0;
 }
 
 h3 {
     font-size: 36px;
     font-weight: 900;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
 }
 
 a {
@@ -54,6 +61,7 @@ a:focus {
 
 .small-text {
     font-size: 16px;
+    margin-top: 5px;
 } 
 
 header,
@@ -61,14 +69,7 @@ section {
     padding: 100px 0;
 }
 
-header {
-    background-color: #d7d7d7;
-}
-
-.about-me {
-    background-color: #ffeaea;
-}
-
-.articles {
-    background-color: #eaf9ff;
+.inverse {
+    color: #fff;
+    background: #252525;
 }
