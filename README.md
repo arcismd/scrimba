@@ -2,6 +2,14 @@
 
 My projects based on the The Frontend Developer Career Path [curriculum](https://scrimba.com/learn/frontend).
 
+## Module 5
+
+- Dice Game - __[View on GitHub](https://arcismd.github.io/scrimba/challenge-dice-game/) / [View on CodePen](https://codepen.io/arcismd/pen/ExQNbQo)__. _[[path](https://github.com/arcismd/scrimba/tree/main/challenge-dice-game)]_
+
+- JS Modal - __[View on GitHub](https://arcismd.github.io/scrimba/js-modal-search-bar-carousel/modal/) / [View on CodePen](https://codepen.io/arcismd/pen/qBxqVVY)__. _[[path](https://github.com/arcismd/scrimba/tree/main/js-modal-search-bar-carousel/modal)]_
+- JS Search Bar - __[View on GitHub](https://arcismd.github.io/scrimba/js-modal-search-bar-carousel/search-bar/) / [View on CodePen](https://codepen.io/arcismd/pen/wvyoPpv)__. _[[path](https://github.com/arcismd/scrimba/tree/main/js-modal-search-bar-carousel/search-bar)]_
+- JS Carousel - __[View on GitHub](https://arcismd.github.io/scrimba/js-modal-search-bar-carousel/carousel/) / [View on CodePen](https://codepen.io/arcismd/pen/YzepEYd)__. _[[path](https://github.com/arcismd/scrimba/tree/main//js-modal-search-bar-carousel/carousel)]_
+
 ## Module 4
 
 - CSS Challenge - __[View on GitHub](https://arcismd.github.io/scrimba/css-challenge/) / [View on CodePen](https://codepen.io/arcismd/pen/poayqRG)__. _[[path](https://github.com/arcismd/scrimba/tree/main/css-challenge)]_
