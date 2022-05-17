@@ -4,26 +4,33 @@ function getDiceRollArray(diceCount) {
     });
 }
 
-// CHALLENGE 
-// 1. Add this function as a method of our character constructor
-// 2. Make a small change to getCharacterHtml to make the app work again
+/*
+CHALLENGE
+-Create a new const called characterData and set it equals to an 
+object which holds both our hero and monster objects. 
+
+-Think about how we access the data from our new object
+when we set up new characters down at the very bottom of the app. 
+-See if you can work out what needs to change there to keep the 
+app working.
+*/
 
 
-
-const hero = {
-    elementId: "hero",
-    name: "Wizard",
-    avatar: "images/wizard.png",
-    health: 60,
-    diceCount: 3
-}
-
-const monster = {
-    elementId: "monster",
-    name: "Orc",
-    avatar: "images/orc.png",
-    health: 10,
-    diceCount: 1
+const characterData = {
+    hero: {
+        elementId: "hero",
+        name: "Wizard",
+        avatar: "images/wizard.png",
+        health: 60,
+        diceCount: 3
+    },
+    monster: {
+        elementId: "monster",
+        name: "Orc",
+        avatar: "images/orc.png",
+        health: 10,
+        diceCount: 1
+    }
 }
 
 function Character(data) {
@@ -39,7 +46,7 @@ function Character(data) {
         const { elementId, name, avatar, health, diceCount } = this;
         let diceHtml = this.getDiceHtml(diceCount);
 
-        document.getElementById(elementId).innerHTML = `
+        return `
             <div class="character-card">
                 <h4 class="name"> ${name} </h4>
                 <img class="avatar" src="${avatar}" />
@@ -51,8 +58,13 @@ function Character(data) {
     }
 }
 
-const wizard = new Character(hero)
-wizard.getCharacterHtml()
 
-const orc = new Character(monster)
-orc.getCharacterHtml()
+function render() {
+    document.getElementById(wizard.elementId).innerHTML = wizard.getCharacterHtml();
+    document.getElementById(orc.elementId).innerHTML = orc.getCharacterHtml();
+}
+
+/*Does something here need to change?*/
+const wizard = new Character(characterData.hero)
+const orc = new Character(characterData.monster)
+render()
