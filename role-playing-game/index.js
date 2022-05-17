@@ -4,11 +4,11 @@ function getDiceRollArray(diceCount) {
     });
 }
 
-function getDiceHtml(diceCount) {
-    return getDiceRollArray(diceCount).map(function (num) {
-        return `<div class="dice">${num}</div>`
-    }).join('')
-}
+// CHALLENGE 
+// 1. Add this function as a method of our character constructor
+// 2. Make a small change to getCharacterHtml to make the app work again
+
+
 
 const hero = {
     elementId: "hero",
@@ -26,45 +26,33 @@ const monster = {
     diceCount: 1
 }
 
-/*
-Challenge
-1. Create a method called getCharacterHtml that performs the 
-   same tasks as our current renderCharacter function.
-2. Create two new instances of Character. One for a hero, 
-   called "wizard", and one for a monster, called "orc". 
-   Render both of them on the page.
-3. Delete both the old renderCharacter function and the two 
-   lines of code at the bottom of the page which invoke that 
-   function.
-*/
-
 function Character(data) {
-    this.elementId = data.elementId;
-    this.name = data.name;
-    this.avatar = data.avatar;
-    this.health = data.health;
-    this.diceCount = data.diceCount;
+    Object.assign(this, data)
+
+    this.getDiceHtml = function (diceCount) {
+        return getDiceRollArray(diceCount).map(function (num) {
+            return `<div class="dice">${num}</div>`
+        }).join('')
+    }
 
     this.getCharacterHtml = function () {
         const { elementId, name, avatar, health, diceCount } = this;
-        const diceHtml = getDiceHtml(diceCount)
+        let diceHtml = this.getDiceHtml(diceCount);
 
-        document.getElementById(elementId).innerHTML =
-            `<div class="character-card">
-            <h4 class="name"> ${name} </h4>
-            <img class="avatar" src="${avatar}" />
-            <div class="health">health: <b> ${health} </b></div>
-            <div class="dice-container">    
-                ${diceHtml}
-            </div>
-        </div>`;
-
+        document.getElementById(elementId).innerHTML = `
+            <div class="character-card">
+                <h4 class="name"> ${name} </h4>
+                <img class="avatar" src="${avatar}" />
+                <div class="health">health: <b> ${health} </b></div>
+                <div class="dice-container">
+                    ${diceHtml}
+                </div>
+            </div>`;
     }
-
 }
 
 const wizard = new Character(hero)
-const orc = new Character(monster)
 wizard.getCharacterHtml()
-orc.getCharacterHtml()
 
+const orc = new Character(monster)
+orc.getCharacterHtml()
