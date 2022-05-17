@@ -1,20 +1,12 @@
 function getDiceRollArray(diceCount) {
-    return new Array(diceCount).fill(0).map(function(){
+    return new Array(diceCount).fill(0).map(function () {
         return Math.floor(Math.random() * 6) + 1
-    })
-    
-/* Challenge: 
-1. Replace the for loop in getDiceRollArray with a new Array() and fill it 
-with 0s as its initial state. The new array should be diceRoll length.
-2. Use .map() directly on the array rather than declaring any new variables 
-and return a random number from 1-6 in each element of the array.
-3. Make sure you delete anything from that function that we no longer need.
-*/       
+    });
 }
 
 function getDiceHtml(diceCount) {
-    return getDiceRollArray(diceCount).map(function(num){ 
-        return  `<div class="dice">${num}</div>`
+    return getDiceRollArray(diceCount).map(function (num) {
+        return `<div class="dice">${num}</div>`
     }).join('')
 }
 
@@ -34,12 +26,31 @@ const monster = {
     diceCount: 1
 }
 
-function renderCharacter(data) {
-    const { elementId, name, avatar, health, diceCount } = data;
-    const diceHtml = getDiceHtml(diceCount)
+/*
+Challenge
+1. Create a method called getCharacterHtml that performs the 
+   same tasks as our current renderCharacter function.
+2. Create two new instances of Character. One for a hero, 
+   called "wizard", and one for a monster, called "orc". 
+   Render both of them on the page.
+3. Delete both the old renderCharacter function and the two 
+   lines of code at the bottom of the page which invoke that 
+   function.
+*/
 
-    document.getElementById(elementId).innerHTML =
-        `<div class="character-card">
+function Character(data) {
+    this.elementId = data.elementId;
+    this.name = data.name;
+    this.avatar = data.avatar;
+    this.health = data.health;
+    this.diceCount = data.diceCount;
+
+    this.getCharacterHtml = function () {
+        const { elementId, name, avatar, health, diceCount } = this;
+        const diceHtml = getDiceHtml(diceCount)
+
+        document.getElementById(elementId).innerHTML =
+            `<div class="character-card">
             <h4 class="name"> ${name} </h4>
             <img class="avatar" src="${avatar}" />
             <div class="health">health: <b> ${health} </b></div>
@@ -47,7 +58,13 @@ function renderCharacter(data) {
                 ${diceHtml}
             </div>
         </div>`;
+
+    }
+
 }
 
-renderCharacter(hero);
-renderCharacter(monster);
+const wizard = new Character(hero)
+const orc = new Character(monster)
+wizard.getCharacterHtml()
+orc.getCharacterHtml()
+
