@@ -39,8 +39,7 @@ main {
     position: relative;
     background: #231d24;
     text-align: center;
-    overflow: hidden;
-    border: 0.2rem solid #000721;
+    border: 0.08rem solid #000721;
     box-shadow: inset 0px 0px 6px 2px rgba(100,100,100,0.2),
                 0px 0px 10px rgba(117,182,214,0.2);
 }
@@ -133,6 +132,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
 }
 
 @media(min-width:550px){
@@ -190,6 +191,7 @@ button {
         margin-top: 0;
     }
 }
+
 
 button:focus { outline: 0 }
 
