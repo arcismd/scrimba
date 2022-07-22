@@ -57,7 +57,7 @@ ___Code reviews___
 
 ## Module 11
 
-- UI/Portfolio - __[View on GitHub](https://arcismd.github.io/scrimba/card-component-flexbox/)__. _[[path](https://github.com/arcismd/scrimba/tree/main/card-component-flexbox)]_
+- UI/Portfolio - __[View on GitHub](https://arcismd.github.io/scrimba/portfolio/)__. _[[path](https://github.com/arcismd/scrimba/tree/main/portfolio)]_
 
 ## Module 12
 
